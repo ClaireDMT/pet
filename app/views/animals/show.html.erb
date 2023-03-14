@@ -1,0 +1,7 @@
+<h1><%= @animal.name %> - <%= @animal.species %></h1>
+<p>Was found on <%= @animal.found_on %>, <%= @animal.address %></p>
+
+<%= link_to "Delete",
+  animal_path(@animal),
+  data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+%>

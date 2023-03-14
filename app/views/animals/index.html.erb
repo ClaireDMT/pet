@@ -1,0 +1,10 @@
+<h1>Animals found here. Poooooor things</h1>
+
+<ul>
+  <% @animals.each do |animal| %>
+    <li>
+      <h2><%= animal.name %></h2>
+      <p><%= animal.species %></p>
+    </li>
+  <% end %>
+</ul>
